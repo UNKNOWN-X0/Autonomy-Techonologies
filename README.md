@@ -60,6 +60,10 @@ Each page is one self-contained HTML file with no build step needed to view it. 
 
 ## Hosting
 
-The site is published by the **Deploy Study Pages** workflow (`.github/workflows/pages.yml`) on every push to `main`. It copies the HTML pages and `assets/` into the site, so `README.md` stays on GitHub and never appears on the website. Each run's summary links straight to the live site.
+The site is published by **GitHub Pages with Jekyll**, straight from the `main` branch. Every commit to `main` starts GitHub's automatic **pages-build-deployment** run (see the **Actions** tab), which builds the site and publishes it within a minute or two. Each run links to the live site.
 
-Setup (once): **Settings → Pages → Build and deployment → Source: GitHub Actions**. The repository must stay public for free Pages hosting.
+- The pages have no Jekyll front matter, so Jekyll publishes them exactly as uploaded.
+- `index.html` is the homepage. `README.md` stays on GitHub and is not used as the start page.
+- `.github/workflows/jekyll-docker.yml` (**Jekyll site CI**) is a separate check: it builds the site in a Jekyll container on every push and pull request, so a broken build shows up as a failed run. It does not publish anything.
+
+Setup (once): **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`. The repository must stay public for free Pages hosting.
