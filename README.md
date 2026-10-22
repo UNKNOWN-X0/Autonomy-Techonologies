@@ -1,56 +1,61 @@
-# Autonomy-Techonologies — Study Pages
+# Study Pages
 
-Self-contained HTML study guides and interactive labs, hosted with GitHub Pages.
+Study guides and interactive labs for first-semester engineering at FAU Erlangen-Nürnberg (WS 2026/27): Electrical Engineering 1 and Mathematics for Engineers I.
 
-**Live site:** https://unknown-x0.github.io/Autonomy-Techonologies/
+**[Open the site →](https://unknown-x0.github.io/Autonomy-Techonologies/)**
 
-## Pages
+![Study Pages hub](assets/preview.png)
 
-| Course | Page | Type |
+> Personal study material written from the lecture notes. Not an official FAU publication; check anything exam-relevant against your course materials.
+
+## What's inside
+
+| Course | Page | What it does |
 | --- | --- | --- |
-| Electrical Engineering 1 | [Electrostatic Fields](https://unknown-x0.github.io/Autonomy-Techonologies/ee1-electrostatics-guide.html) | Study guide |
-| Electrical Engineering 1 | [Electrostatic Fields Lab](https://unknown-x0.github.io/Autonomy-Techonologies/ee1-electrostatics-lab.html) | Interactive lab |
-| Mathematics for Engineers I | [Mathematics for Engineers I](https://unknown-x0.github.io/Autonomy-Techonologies/math1-guide.html) | Study guide |
+| Electrical Engineering 1 | [Electrostatic Fields: study guide](https://unknown-x0.github.io/Autonomy-Techonologies/ee1-electrostatics-guide.html) | Chapter 1 condensed (charge to capacitors and stored energy): key formulas, worked methods, 20 practice problems, exam checklist |
+| Electrical Engineering 1 | [Electrostatic Fields Lab](https://unknown-x0.github.io/Autonomy-Techonologies/ee1-electrostatics-lab.html) | Drag charges and sliders to see Coulomb forces, field lines, potential maps, Gauss surfaces, interfaces and capacitor networks respond live |
+| Mathematics for Engineers I | [Mathematics for Engineers I: study guide](https://unknown-x0.github.io/Autonomy-Techonologies/math1-guide.html) | Logic, real and complex numbers, vector spaces, matrices, eigenvalues, least squares; 20 practice problems, exam checklist |
 
-Each study guide has a section menu, formulas, worked methods, 20 practice problems with a hidden answer key, and an exam checklist (ticks are saved in your browser).
+## How to study with it
 
-## Files
+1. Read one section of a guide, then cover its formulas and write them out from memory.
+2. Do the matching practice problems, then open **Show answer key** to check.
+3. For electrostatics, try the same idea in the lab: change one input and predict the result before you look.
+4. Tick the exam checklist as each skill sticks. Ticks are saved in your browser.
+
+Every page works on phone and desktop and follows your system's light or dark mode. The study guides also print cleanly (the side menu is hidden in print).
+
+## Repository layout
 
 ```
 index.html                      Hub page linking to every study page
-ee1-electrostatics-guide.html   EE1 Chapter 1: Electrostatic Fields guide
-ee1-electrostatics-lab.html     EE1 interactive field simulator
-math1-guide.html                Mathematics for Engineers I guide
+ee1-electrostatics-guide.html   EE1 Chapter 1 study guide
+ee1-electrostatics-lab.html     EE1 interactive lab
+math1-guide.html                Mathematics for Engineers I study guide
+assets/preview.png              Screenshot used in this README
 ```
 
-Every page is a single HTML file. Equations are pre-rendered with KaTeX; only fonts and the KaTeX stylesheet load from a CDN.
+Each page is one self-contained HTML file with no build step needed to view it. Only the fonts and the KaTeX stylesheet load from a CDN.
 
-The two study guides are generated from the LaTeX sources in the claude.ai project **Focus - Classes** (`Electrostatics-Study-Guide.tex`, `MathEng-I-Study-Guide.tex`), converted with pandoc. When a guide changes there, regenerate the matching HTML page here.
+## How the pages are made
 
-## Colours
+- **Study guides** are written in LaTeX (`Electrostatics-Study-Guide.tex`, `MathEng-I-Study-Guide.tex`, kept in the claude.ai project *Focus - Classes*), converted to HTML with pandoc, and every formula is pre-rendered with KaTeX. That makes the pages large (about 0.9 MB each) but the math shows instantly, without JavaScript.
+- **The lab** is a single page with its interactive code inline. Its source is kept in the same project.
+- When a source changes, rebuild the matching page and upload it here.
 
-The pages use the FAU Erlangen-Nürnberg brand palette (colours only; no FAU logo):
+## Design
 
-| Use | Colour |
-| --- | --- |
-| Headings, header band, main accent | FAU blue `#04316A` (deep `#041E42`, links `#004A9F`, tint `#CED9E7`) |
-| Electrical Engineering 1 | Technische Fakultät `#8C9FB1` (text `#2F586E`) |
-| Mathematics for Engineers I | Naturwissenschaftliche Fakultät `#7BB725` (text `#266141`) |
-| Lab: positive / negative charge | `#C50F3C` / `#004A9F` |
+- **Colours:** the FAU Erlangen-Nürnberg brand palette. FAU blue `#04316A` for headings and accents; faculty colours mark the courses: Technische Fakultät `#8C9FB1` for Electrical Engineering 1, Naturwissenschaftliche Fakultät `#7BB725` for Mathematics for Engineers I. Faculty colours appear as stripes and swatches, with their darker shades (`#2F586E`, `#266141`) for text, so contrast stays readable.
+- **Font:** Roboto and Roboto Mono, FAU's web typeface (Apache 2.0, via Google Fonts).
+- **Site mark:** an original icon (field lines between a + and a − charge). The FAU logo is not used; it is a protected university trademark.
 
-Faculty colours are used for stripes and swatches, with their darker shades for text, so contrast stays readable.
+## Adding a page
 
-**Font:** Roboto (text and headings) and Roboto Mono (labels), FAU's web typeface, loaded from Google Fonts (Apache 2.0).
-
-**Site mark:** an original icon (field lines between a + and a − charge) used in the header, side menu and as the favicon. It is not the FAU logo, which is a protected university trademark.
-
-## Adding a new page
-
-1. Upload the `.html` file to the repo root (**Add file → Upload files**). Prefer names without spaces, e.g. `ee1-chapter2-guide.html`.
-2. In `index.html`, copy an existing `<a class="card …">` block and change the link, tag, name and description. Use class `ee` or `math` for the course colour, or add a new `<h2>` section for a new course.
-3. Add a row to the table above.
-4. Commit. The site updates within a minute or two.
+1. Upload the `.html` file to the repo root (**Add file → Upload files**). Use a name without spaces, e.g. `ee1-chapter2-guide.html`.
+2. In `index.html`, copy an existing `<a class="card …">` block and change the link, tag, name and description. Class `tf` gives the Electrical Engineering colour, `nat` the Mathematics colour. For a new course, add a new `<h2>` section.
+3. Add a row to the **What's inside** table above.
+4. Commit. GitHub Pages updates the site within a minute or two.
 
 ## Hosting
 
-GitHub Pages is set to deploy from the `main` branch, root folder (**Settings → Pages**). The repo must stay public for free Pages hosting.
+GitHub Pages deploys from the `main` branch, root folder (**Settings → Pages**). The repository must stay public for free Pages hosting.
