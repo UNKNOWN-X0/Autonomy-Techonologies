@@ -2,7 +2,7 @@
 
 Study guides and interactive labs for first-semester engineering at FAU Erlangen-Nürnberg (WS 2026/27): Electrical Engineering I and Mathematics for Engineers I.
 
-**[Open the site →](https://unknown-x0.github.io/Autonomy-Techonologies/)**
+**[Open the site →](https://unknown-x0.github.io/AutonomyTechnologies/)**
 
 ![Study Pages hub](assets/preview.png)
 
@@ -12,10 +12,10 @@ Study guides and interactive labs for first-semester engineering at FAU Erlangen
 
 | Course | Page | What it does |
 | --- | --- | --- |
-| Electrical Engineering I | [Electrostatic Fields: study guide](https://unknown-x0.github.io/Autonomy-Techonologies/ee1-electrostatics-guide.html) | Chapter 1 condensed (charge to capacitors and stored energy): key formulas, worked methods, 20 practice problems, exam checklist |
-| Electrical Engineering I | [Electrostatic Fields Lab](https://unknown-x0.github.io/Autonomy-Techonologies/ee1-electrostatics-lab.html) | Drag charges and sliders to see Coulomb forces, field lines, potential maps, Gauss surfaces, interfaces and capacitor networks respond live |
-| Mathematics for Engineers I | [Mathematics for Engineers I: study guide](https://unknown-x0.github.io/Autonomy-Techonologies/math1-guide.html) | Logic, real and complex numbers, vector spaces, matrices, eigenvalues, least squares; 20 practice problems, exam checklist |
-| Mathematics for Engineers I | [Mathematics for Engineers I Lab](https://unknown-x0.github.io/Autonomy-Techonologies/math1-lab.html) | Ten hands-on workbenches: truth tables and Venn diagrams, absolute-value inequalities, induction, injective/surjective maps, complex numbers and roots, vectors, Gauss elimination step by step, eigenvectors and least squares |
+| Electrical Engineering I | [Electrostatic Fields: study guide](https://unknown-x0.github.io/AutonomyTechnologies/ee1-electrostatics-guide.html) | Chapter 1 condensed (charge to capacitors and stored energy): key formulas, worked methods, 20 practice problems, exam checklist |
+| Electrical Engineering I | [Electrostatic Fields Lab](https://unknown-x0.github.io/AutonomyTechnologies/ee1-electrostatics-lab.html) | Drag charges and sliders to see Coulomb forces, field lines, potential maps, Gauss surfaces, interfaces and capacitor networks respond live |
+| Mathematics for Engineers I | [Mathematics for Engineers I: study guide](https://unknown-x0.github.io/AutonomyTechnologies/math1-guide.html) | Logic, real and complex numbers, vector spaces, matrices, eigenvalues, least squares; 20 practice problems, exam checklist |
+| Mathematics for Engineers I | [Mathematics for Engineers I Lab](https://unknown-x0.github.io/AutonomyTechnologies/math1-lab.html) | Ten hands-on workbenches: truth tables and Venn diagrams, absolute-value inequalities, induction, injective/surjective maps, complex numbers and roots, vectors, Gauss elimination step by step, eigenvectors and least squares |
 
 ## How to study with it
 
