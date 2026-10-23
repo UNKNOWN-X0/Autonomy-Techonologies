@@ -10,12 +10,12 @@ Study guides and interactive labs for first-semester engineering at FAU Erlangen
 
 ## What's inside
 
-| Course | Page | What it does |
-| --- | --- | --- |
-| Electrical Engineering I | [Electrostatic Fields: study guide](https://unknown-x0.github.io/AutonomyTechnologies/ee1-electrostatics-guide.html) | Chapter 1 condensed (charge to capacitors and stored energy): key formulas, worked methods, 20 practice problems, exam checklist |
-| Electrical Engineering I | [Electrostatic Fields Lab](https://unknown-x0.github.io/AutonomyTechnologies/ee1-electrostatics-lab.html) | Drag charges and sliders to see Coulomb forces, field lines, potential maps, Gauss surfaces, interfaces and capacitor networks respond live |
-| Mathematics for Engineers I | [Mathematics for Engineers I: study guide](https://unknown-x0.github.io/AutonomyTechnologies/math1-guide.html) | Logic, real and complex numbers, vector spaces, matrices, eigenvalues, least squares; 20 practice problems, exam checklist |
-| Mathematics for Engineers I | [Mathematics for Engineers I Lab](https://unknown-x0.github.io/AutonomyTechnologies/math1-lab.html) | Ten hands-on workbenches: truth tables and Venn diagrams, absolute-value inequalities, induction, injective/surjective maps, complex numbers and roots, vectors, Gauss elimination step by step, eigenvectors and least squares |
+| Course                      | Page                                                                                                                 | What it does                                                                                                                                                                                                                    |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Electrical Engineering I    | [Electrostatic Fields: study guide](https://unknown-x0.github.io/AutonomyTechnologies/ee1-electrostatics-guide.html) | Chapter 1 condensed (charge to capacitors and stored energy): key formulas, worked methods, 20 practice problems, exam checklist                                                                                                |
+| Electrical Engineering I    | [Electrostatic Fields Lab](https://unknown-x0.github.io/AutonomyTechnologies/ee1-electrostatics-lab.html)            | Drag charges and sliders to see Coulomb forces, field lines, potential maps, Gauss surfaces, interfaces and capacitor networks respond live                                                                                     |
+| Mathematics for Engineers I | [Mathematics for Engineers I: study guide](https://unknown-x0.github.io/AutonomyTechnologies/math1-guide.html)       | Logic, real and complex numbers, vector spaces, matrices, eigenvalues, least squares; 20 practice problems, exam checklist                                                                                                      |
+| Mathematics for Engineers I | [Mathematics for Engineers I Lab](https://unknown-x0.github.io/AutonomyTechnologies/math1-lab.html)                  | Ten hands-on workbenches: truth tables and Venn diagrams, absolute-value inequalities, induction, injective/surjective maps, complex numbers and roots, vectors, Gauss elimination step by step, eigenvectors and least squares |
 
 ## How to study with it
 
@@ -41,7 +41,7 @@ Each page is one self-contained HTML file with no build step needed to view it. 
 
 ## How the pages are made
 
-- **Study guides** are written in LaTeX (`Electrostatics-Study-Guide.tex`, `MathEng-I-Study-Guide.tex`, kept in the claude.ai project *Focus - Classes*), converted to HTML with pandoc, and every formula is pre-rendered with KaTeX. That makes the pages large (about 0.9 MB each) but the math shows instantly, without JavaScript.
+- **Study guides** are written in LaTeX (`Electrostatics-Study-Guide.tex`, `MathEng-I-Study-Guide.tex`, kept in the claude.ai project _Focus - Classes_), converted to HTML with pandoc, and every formula is pre-rendered with KaTeX. That makes the pages large (about 0.9 MB each) but the math shows instantly, without JavaScript.
 - **The labs** are single pages with their interactive code inline. Their sources are kept in the same project and converted to the site design (FAU colours, Roboto, site bar) without changing the code.
 - When a source changes, rebuild the matching page and upload it here.
 
