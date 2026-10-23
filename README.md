@@ -37,13 +37,13 @@ math1-lab.html                  Mathematics for Engineers I interactive lab
 assets/preview.png              Screenshot used in this README
 ```
 
-Each page is one self-contained HTML file with no build step needed to view it. Only the fonts and the KaTeX stylesheet load from a CDN.
+Each page loads its local CSS and JavaScript files, with no build step needed. Fonts and the KaTeX stylesheet load from a CDN.
 
 ## How the pages are made
 
 - **Study guides** are written in LaTeX (`Electrostatics-Study-Guide.tex`, `MathEng-I-Study-Guide.tex`, kept in the claude.ai project _Focus - Classes_), converted to HTML with pandoc, and every formula is pre-rendered with KaTeX. That makes the pages large (about 0.9 MB each) but the math shows instantly, without JavaScript.
-- **The labs** are single pages with their interactive code inline. Their sources are kept in the same project and converted to the site design (FAU colours, Roboto, site bar) without changing the code.
-- When a source changes, rebuild the matching page and upload it here.
+- **The labs** are single pages with their interactive code in `js/` and styles in `css/`. Their sources are kept in the same project and converted to the site design (FAU colours, Roboto, site bar) without changing the code.
+- When a source changes, update the matching HTML, CSS, and JavaScript together.
 
 ## Design
 
@@ -67,3 +67,12 @@ The site is published by **GitHub Pages with Jekyll**, straight from the `main` 
 - `.github/workflows/jekyll-docker.yml` (**Jekyll site CI**) is a separate check: it builds the site in a Jekyll container on every push and pull request, so a broken build shows up as a failed run. It does not publish anything.
 
 Setup (once): **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`. The repository must stay public for free Pages hosting.
+
+## Module map
+
+- Root `.html` files: page structure, study content, and rendered mathematics.
+- `css/<page-name>.css`: each page's presentation.
+- `js/<page-name>.js`: each guide's controls or lab's simulations.
+- `assets/`: images.
+
+The labs keep their original private function scope and initialization order. The large guide HTML files mainly contain pre-rendered mathematics, so they remain content files. No build step was introduced. Upload the HTML **and** its `css/` and `js/` directories together; individual HTML files are no longer self-contained.
