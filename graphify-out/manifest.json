@@ -1,0 +1,74 @@
+{
+  ".github/workflows/jekyll-docker.yml": {
+    "mtime": 1792756186.3917487,
+    "seen": 1792799239.242362,
+    "ast_hash": "29fe146da84567bcc68665ce404ff135",
+    "semantic_hash": "29fe146da84567bcc68665ce404ff135"
+  },
+  "js/ee1-electrostatics-guide.js": {
+    "mtime": 1792758084.5625243,
+    "seen": 1792799239.242367,
+    "ast_hash": "bb3854f4b7a9aa7046e1e322d40edc7f",
+    "semantic_hash": "bb3854f4b7a9aa7046e1e322d40edc7f"
+  },
+  "js/ee1-electrostatics-lab.js": {
+    "mtime": 1792758084.5697968,
+    "seen": 1792799239.242369,
+    "ast_hash": "0e811741aa2fe9e3ec375d0c5cd91b67",
+    "semantic_hash": "0e811741aa2fe9e3ec375d0c5cd91b67"
+  },
+  "js/math1-guide.js": {
+    "mtime": 1792758084.5789204,
+    "seen": 1792799239.2423701,
+    "ast_hash": "72b8a2c207e6f8c90823dcf1fb23b620",
+    "semantic_hash": "72b8a2c207e6f8c90823dcf1fb23b620"
+  },
+  "js/math1-lab.js": {
+    "mtime": 1792758084.5850062,
+    "seen": 1792799239.242371,
+    "ast_hash": "d1ed684ddb971b84570692a9996d2ea3",
+    "semantic_hash": "d1ed684ddb971b84570692a9996d2ea3"
+  },
+  "README.md": {
+    "mtime": 1792758296.0699494,
+    "seen": 1792799239.242372,
+    "ast_hash": "b3e01ada85a01d6e0cf71de211a08d84",
+    "semantic_hash": "b3e01ada85a01d6e0cf71de211a08d84"
+  },
+  "ee1-electrostatics-guide.html": {
+    "mtime": 1792758084.565505,
+    "seen": 1792799239.242372,
+    "ast_hash": "037816e7d85a6b445d896d03f8c5d118",
+    "semantic_hash": "037816e7d85a6b445d896d03f8c5d118"
+  },
+  "ee1-electrostatics-lab.html": {
+    "mtime": 1792758084.5705705,
+    "seen": 1792799239.2423732,
+    "ast_hash": "451a82447d340c1ef19ee5d2ce662fa0",
+    "semantic_hash": "451a82447d340c1ef19ee5d2ce662fa0"
+  },
+  "index.html": {
+    "mtime": 1792758084.5722694,
+    "seen": 1792799239.242374,
+    "ast_hash": "e3547bbd49803d97a7e0117c80cc15a8",
+    "semantic_hash": "e3547bbd49803d97a7e0117c80cc15a8"
+  },
+  "math1-guide.html": {
+    "mtime": 1792758084.581877,
+    "seen": 1792799239.242375,
+    "ast_hash": "1039b229bf228eb1be2ecc9ac52efe8a",
+    "semantic_hash": "1039b229bf228eb1be2ecc9ac52efe8a"
+  },
+  "math1-lab.html": {
+    "mtime": 1792758084.5854888,
+    "seen": 1792799239.2423759,
+    "ast_hash": "f83676e7beab0af2925e90231e6b5cff",
+    "semantic_hash": "f83676e7beab0af2925e90231e6b5cff"
+  },
+  "assets/preview.png": {
+    "mtime": 1792755728.5472937,
+    "seen": 1792799239.2423759,
+    "ast_hash": "ca4014e7f51a95fc55f149f16540cb24",
+    "semantic_hash": "ca4014e7f51a95fc55f149f16540cb24"
+  }
+}
