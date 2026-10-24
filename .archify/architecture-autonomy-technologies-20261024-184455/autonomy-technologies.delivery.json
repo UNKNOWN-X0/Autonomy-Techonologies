@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "e37f20b4-d09f-4c16-9e36-510a0ea3b30c",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/candidate.json",
+  "output": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html",
+  "specification": {
+    "sha256": "1a271b1856d014a586ae1615feb599a00eff473af7129292f0ae0d26cf136b0a",
+    "bytes": 6221
+  },
+  "artifact": {
+    "sha256": "c1479fc240845d97e708dd2ffcccbfbd6313f22a4c76bd4bb627948ed1668742",
+    "bytes": 828648
+  }
+}

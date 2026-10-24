@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Study Pages — Static Site Architecture",
+    "output": ".archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/UNKNOWN-X0/AutonomyTechnologies.git",
+      "provider": "github",
+      "link_mode": "web",
+      "revision": "a937859326f393537a578bc00204ad34e7460fa7"
+    }
+  },
+  "components": [
+    {
+      "id": "learner",
+      "type": "external",
+      "label": "Learner",
+      "sublabel": "browser session",
+      "pos": [
+        40,
+        50
+      ],
+      "size": [
+        142,
+        64
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 20,
+          "end_line": 27
+        }
+      ]
+    },
+    {
+      "id": "pages",
+      "type": "cloud",
+      "label": "GitHub Pages",
+      "sublabel": "Jekyll · main / root",
+      "pos": [
+        260,
+        50
+      ],
+      "size": [
+        154,
+        64
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 63,
+          "end_line": 69
+        }
+      ]
+    },
+    {
+      "id": "hub",
+      "type": "frontend",
+      "label": "Study Pages hub",
+      "sublabel": "index.html",
+      "pos": [
+        490,
+        50
+      ],
+      "size": [
+        150,
+        64
+      ],
+      "sources": [
+        {
+          "path": "index.html",
+          "line": 56,
+          "end_line": 105
+        }
+      ]
+    },
+    {
+      "id": "guides",
+      "type": "frontend",
+      "label": "Course study guides",
+      "sublabel": "Electrical Engineering I · Mathematics I",
+      "pos": [
+        710,
+        140
+      ],
+      "size": [
+        175,
+        74
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 13,
+          "end_line": 18
+        },
+        {
+          "path": "README.md",
+          "line": 44,
+          "end_line": 46
+        }
+      ]
+    },
+    {
+      "id": "labs",
+      "type": "frontend",
+      "label": "Interactive labs",
+      "sublabel": "EEI simulations · Math workbenches",
+      "pos": [
+        710,
+        310
+      ],
+      "size": [
+        175,
+        74
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 15,
+          "end_line": 18
+        },
+        {
+          "path": "README.md",
+          "line": 40,
+          "end_line": 46
+        }
+      ]
+    },
+    {
+      "id": "checklist-store",
+      "type": "database",
+      "label": "Checklist progress",
+      "sublabel": "browser localStorage",
+      "pos": [
+        970,
+        140
+      ],
+      "size": [
+        150,
+        74
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 25
+        },
+        {
+          "path": "js/ee1-electrostatics-guide.js",
+          "line": 2,
+          "end_line": 14
+        },
+        {
+          "path": "js/math1-guide.js",
+          "line": 2,
+          "end_line": 14
+        }
+      ]
+    },
+    {
+      "id": "cdn-assets",
+      "type": "cloud",
+      "label": "External page assets",
+      "sublabel": "Google Fonts · KaTeX stylesheet",
+      "pos": [
+        970,
+        310
+      ],
+      "size": [
+        150,
+        74
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 40,
+          "end_line": 51
+        },
+        {
+          "path": "ee1-electrostatics-guide.html",
+          "line": 11,
+          "end_line": 21
+        }
+      ]
+    },
+    {
+      "id": "repository",
+      "type": "cloud",
+      "label": "GitHub repository",
+      "sublabel": "HTML · local CSS / JavaScript",
+      "pos": [
+        260,
+        470
+      ],
+      "size": [
+        154,
+        64
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 29,
+          "end_line": 46
+        }
+      ]
+    },
+    {
+      "id": "ci",
+      "type": "cloud",
+      "label": "Jekyll CI",
+      "sublabel": "Docker build · validation only",
+      "pos": [
+        490,
+        470
+      ],
+      "size": [
+        154,
+        64
+      ],
+      "sources": [
+        {
+          "path": ".github/workflows/jekyll-docker.yml",
+          "line": 1,
+          "end_line": 19
+        },
+        {
+          "path": "README.md",
+          "line": 67
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "learner-to-pages",
+      "from": "learner",
+      "to": "pages",
+      "label": "HTTPS"
+    },
+    {
+      "id": "pages-to-hub",
+      "from": "pages",
+      "to": "hub",
+      "label": "serves index"
+    },
+    {
+      "id": "hub-to-guides",
+      "from": "hub",
+      "to": "guides",
+      "label": "course links"
+    },
+    {
+      "id": "hub-to-labs",
+      "from": "hub",
+      "to": "labs",
+      "label": "course links"
+    },
+    {
+      "id": "repository-to-pages",
+      "from": "repository",
+      "to": "pages",
+      "label": "main commit deploys"
+    },
+    {
+      "id": "repository-to-ci",
+      "from": "repository",
+      "to": "ci",
+      "label": "push / PR check"
+    },
+    {
+      "id": "guides-to-checklist",
+      "from": "guides",
+      "to": "checklist-store",
+      "label": "read / save ticks"
+    },
+    {
+      "id": "guides-to-cdn",
+      "from": "guides",
+      "to": "cdn-assets",
+      "label": "loads font / math CSS"
+    },
+    {
+      "id": "labs-to-cdn",
+      "from": "labs",
+      "to": "cdn-assets",
+      "label": "loads fonts"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Content workflow",
+      "items": [
+        "Study-guide LaTeX sources stay outside this repository and are converted to HTML with Pandoc. (README.md:44–45)",
+        "Lab interactions and styles live in the repository’s js/ and css/ folders. (README.md:45–46)"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Two separate release paths",
+      "items": [
+        "GitHub Pages publishes main from the repository root. (README.md:63, 69)",
+        "The Jekyll Docker workflow checks pushes and pull requests; it does not publish the site. (README.md:67; .github/workflows/jekyll-docker.yml:3–19)"
+      ]
+    }
+  ]
+}

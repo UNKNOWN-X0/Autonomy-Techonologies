@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "finalize",
+  "status": "fail",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/candidate.json",
+    "sha256": "1a271b1856d014a586ae1615feb599a00eff473af7129292f0ae0d26cf136b0a",
+    "bytes": 6221
+  },
+  "artifact": {
+    "path": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html",
+    "sha256": "c1479fc240845d97e708dd2ffcccbfbd6313f22a4c76bd4bb627948ed1668742",
+    "bytes": 828648
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "fail"
+  },
+  "failedStage": "browser-check",
+  "diagnostics": [
+    {
+      "code": "viewer/browser-check-runtime",
+      "severity": "error",
+      "message": "browser-check could not complete its Chrome inspection.",
+      "subject": {
+        "artifact": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html"
+      },
+      "evidence": {
+        "reason": "Chrome DevTools read pipe failed: stream ended\nChrome process: still running.\nChrome transport: Node v22.23.1, libuv 1.51.0, darwin; pid=36152, exitCode=null, signalCode=null.\nChrome read pipe: readable=false, ended=true, destroyed=false, receivedBytes=0, messages=0, bufferedBytes=0.\nChrome write pipe: writable=true, ended=false, destroyed=false, completedWrites=1, writtenBytes=50, bufferedBytes=0."
+      },
+      "supportedFixes": [
+        "resolve the reported Chrome inspection error, then rerun browser-check"
+      ]
+    }
+  ],
+  "diagnosticSummary": {
+    "total": 1,
+    "shown": 1,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/review-4/autonomy-technologies.finalize.json",
+    "summaryReceipt": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/review-4/autonomy-technologies.finalize-summary.json",
+    "browserCheckReceipt": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/review-4/autonomy-technologies.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-24T15:48:29.002Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 738,
+  "browserCheck": {
+    "requested": true,
+    "ran": false
+  }
+}
