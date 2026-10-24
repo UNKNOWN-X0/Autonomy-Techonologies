@@ -2,14 +2,15 @@
   "schema_version": 1,
   "diagram_type": "architecture",
   "meta": {
-    "title": "Study Pages — Static Site Architecture",
+    "title": "Study Pages Architecture",
     "output": ".archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html",
     "quality_profile": "showcase",
+    "locale": "en",
     "repository": {
       "url": "https://github.com/UNKNOWN-X0/AutonomyTechnologies.git",
       "provider": "github",
       "link_mode": "web",
-      "revision": "a937859326f393537a578bc00204ad34e7460fa7"
+      "revision": "e4b3d1e44e52897c50b1cd06bf792321aba09291"
     }
   },
   "components": [
@@ -17,42 +18,22 @@
       "id": "learner",
       "type": "external",
       "label": "Learner",
-      "sublabel": "browser session",
-      "pos": [
-        40,
-        50
-      ],
-      "size": [
-        142,
-        64
-      ],
+      "sublabel": "browser",
+      "pos": [40, 140],
+      "size": [150, 72],
       "sources": [
-        {
-          "path": "README.md",
-          "line": 20,
-          "end_line": 27
-        }
+        { "path": "README.md", "line": 20, "end_line": 27 }
       ]
     },
     {
-      "id": "pages",
+      "id": "pages-host",
       "type": "cloud",
       "label": "GitHub Pages",
       "sublabel": "Jekyll · main / root",
-      "pos": [
-        260,
-        50
-      ],
-      "size": [
-        154,
-        64
-      ],
+      "pos": [270, 140],
+      "size": [175, 72],
       "sources": [
-        {
-          "path": "README.md",
-          "line": 63,
-          "end_line": 69
-        }
+        { "path": "README.md", "line": 63, "end_line": 69 }
       ]
     },
     {
@@ -60,248 +41,180 @@
       "type": "frontend",
       "label": "Study Pages hub",
       "sublabel": "index.html",
-      "pos": [
-        490,
-        50
-      ],
-      "size": [
-        150,
-        64
-      ],
+      "pos": [530, 140],
+      "size": [170, 72],
       "sources": [
-        {
-          "path": "index.html",
-          "line": 56,
-          "end_line": 105
-        }
+        { "path": "index.html", "line": 56, "end_line": 105 }
       ]
     },
     {
-      "id": "guides",
+      "id": "eei-guide",
       "type": "frontend",
-      "label": "Course study guides",
-      "sublabel": "Electrical Engineering I · Mathematics I",
-      "pos": [
-        710,
-        140
-      ],
-      "size": [
-        175,
-        74
-      ],
+      "label": "EEI study guide",
+      "sublabel": "electrostatics · saved checklist",
+      "pos": [800, 50],
+      "size": [205, 88],
       "sources": [
-        {
-          "path": "README.md",
-          "line": 13,
-          "end_line": 18
-        },
-        {
-          "path": "README.md",
-          "line": 44,
-          "end_line": 46
-        }
+        { "path": "ee1-electrostatics-guide.html", "line": 1, "end_line": 22 },
+        { "path": "ee1-electrostatics-guide.html", "line": 61, "end_line": 66 },
+        { "path": "js/ee1-electrostatics-guide.js", "line": 2, "end_line": 14 }
       ]
     },
     {
-      "id": "labs",
+      "id": "eei-lab",
       "type": "frontend",
-      "label": "Interactive labs",
-      "sublabel": "EEI simulations · Math workbenches",
-      "pos": [
-        710,
-        310
-      ],
-      "size": [
-        175,
-        74
-      ],
+      "label": "EEI interactive lab",
+      "sublabel": "electrostatic field workbenches",
+      "pos": [800, 220],
+      "size": [205, 88],
       "sources": [
-        {
-          "path": "README.md",
-          "line": 15,
-          "end_line": 18
-        },
-        {
-          "path": "README.md",
-          "line": 40,
-          "end_line": 46
-        }
+        { "path": "README.md", "line": 15, "end_line": 16 },
+        { "path": "ee1-electrostatics-lab.html", "line": 61, "end_line": 76 },
+        { "path": "js/ee1-electrostatics-lab.js", "line": 205, "end_line": 239 }
+      ]
+    },
+    {
+      "id": "math1-guide",
+      "type": "frontend",
+      "label": "Math I study guide",
+      "sublabel": "course notes · saved checklist",
+      "pos": [800, 390],
+      "size": [205, 88],
+      "sources": [
+        { "path": "math1-guide.html", "line": 1, "end_line": 22 },
+        { "path": "math1-guide.html", "line": 61, "end_line": 66 },
+        { "path": "js/math1-guide.js", "line": 2, "end_line": 14 }
+      ]
+    },
+    {
+      "id": "math1-lab",
+      "type": "frontend",
+      "label": "Math I interactive lab",
+      "sublabel": "ten visual workbenches",
+      "pos": [800, 560],
+      "size": [205, 88],
+      "sources": [
+        { "path": "README.md", "line": 17, "end_line": 18 },
+        { "path": "math1-lab.html", "line": 61, "end_line": 74 },
+        { "path": "js/math1-lab.js", "line": 3306, "end_line": 3336 }
+      ]
+    },
+    {
+      "id": "google-fonts",
+      "type": "cloud",
+      "label": "Google Fonts",
+      "sublabel": "Roboto · Roboto Mono",
+      "pos": [1080, 80],
+      "size": [180, 82],
+      "sources": [
+        { "path": "README.md", "line": 40, "end_line": 51 },
+        { "path": "index.html", "line": 11, "end_line": 17 },
+        { "path": "ee1-electrostatics-lab.html", "line": 14, "end_line": 20 }
+      ]
+    },
+    {
+      "id": "katex-cdn",
+      "type": "cloud",
+      "label": "KaTeX CSS CDN",
+      "sublabel": "guide stylesheet",
+      "pos": [1080, 250],
+      "size": [180, 82],
+      "sources": [
+        { "path": "ee1-electrostatics-guide.html", "line": 17, "end_line": 21 },
+        { "path": "math1-guide.html", "line": 17, "end_line": 21 },
+        { "path": "README.md", "line": 44, "end_line": 45 }
       ]
     },
     {
       "id": "checklist-store",
       "type": "database",
-      "label": "Checklist progress",
-      "sublabel": "browser localStorage",
-      "pos": [
-        970,
-        140
-      ],
-      "size": [
-        150,
-        74
-      ],
+      "label": "Browser localStorage",
+      "sublabel": "ee1-checks · math1-checks",
+      "pos": [1080, 460],
+      "size": [190, 82],
       "sources": [
-        {
-          "path": "README.md",
-          "line": 25
-        },
-        {
-          "path": "js/ee1-electrostatics-guide.js",
-          "line": 2,
-          "end_line": 14
-        },
-        {
-          "path": "js/math1-guide.js",
-          "line": 2,
-          "end_line": 14
-        }
-      ]
-    },
-    {
-      "id": "cdn-assets",
-      "type": "cloud",
-      "label": "External page assets",
-      "sublabel": "Google Fonts · KaTeX stylesheet",
-      "pos": [
-        970,
-        310
-      ],
-      "size": [
-        150,
-        74
-      ],
-      "sources": [
-        {
-          "path": "README.md",
-          "line": 40,
-          "end_line": 51
-        },
-        {
-          "path": "ee1-electrostatics-guide.html",
-          "line": 11,
-          "end_line": 21
-        }
+        { "path": "js/ee1-electrostatics-guide.js", "line": 2, "end_line": 14 },
+        { "path": "js/math1-guide.js", "line": 2, "end_line": 14 }
       ]
     },
     {
       "id": "repository",
       "type": "cloud",
       "label": "GitHub repository",
-      "sublabel": "HTML · local CSS / JavaScript",
-      "pos": [
-        260,
-        470
-      ],
-      "size": [
-        154,
-        64
-      ],
+      "sublabel": "root HTML · local CSS / JS",
+      "pos": [270, 680],
+      "size": [175, 72],
       "sources": [
-        {
-          "path": "README.md",
-          "line": 29,
-          "end_line": 46
-        }
+        { "path": "README.md", "line": 29, "end_line": 46 },
+        { "path": "README.md", "line": 71, "end_line": 78 }
       ]
     },
     {
       "id": "ci",
       "type": "cloud",
-      "label": "Jekyll CI",
-      "sublabel": "Docker build · validation only",
-      "pos": [
-        490,
-        470
-      ],
-      "size": [
-        154,
-        64
-      ],
+      "label": "Jekyll site CI",
+      "sublabel": "Docker build check",
+      "pos": [530, 680],
+      "size": [190, 72],
       "sources": [
-        {
-          "path": ".github/workflows/jekyll-docker.yml",
-          "line": 1,
-          "end_line": 19
-        },
-        {
-          "path": "README.md",
-          "line": 67
-        }
+        { "path": ".github/workflows/jekyll-docker.yml", "line": 1, "end_line": 19 },
+        { "path": "README.md", "line": 67 }
       ]
     }
   ],
   "connections": [
-    {
-      "id": "learner-to-pages",
-      "from": "learner",
-      "to": "pages",
-      "label": "HTTPS"
-    },
-    {
-      "id": "pages-to-hub",
-      "from": "pages",
-      "to": "hub",
-      "label": "serves index"
-    },
-    {
-      "id": "hub-to-guides",
-      "from": "hub",
-      "to": "guides",
-      "label": "course links"
-    },
-    {
-      "id": "hub-to-labs",
-      "from": "hub",
-      "to": "labs",
-      "label": "course links"
-    },
-    {
-      "id": "repository-to-pages",
-      "from": "repository",
-      "to": "pages",
-      "label": "main commit deploys"
-    },
-    {
-      "id": "repository-to-ci",
-      "from": "repository",
-      "to": "ci",
-      "label": "push / PR check"
-    },
-    {
-      "id": "guides-to-checklist",
-      "from": "guides",
-      "to": "checklist-store",
-      "label": "read / save ticks"
-    },
-    {
-      "id": "guides-to-cdn",
-      "from": "guides",
-      "to": "cdn-assets",
-      "label": "loads font / math CSS"
-    },
-    {
-      "id": "labs-to-cdn",
-      "from": "labs",
-      "to": "cdn-assets",
-      "label": "loads fonts"
-    }
+    { "id": "learner-to-pages", "from": "learner", "to": "pages-host", "label": "HTTPS" },
+    { "id": "pages-to-hub", "from": "pages-host", "to": "hub", "label": "serves index" },
+
+    { "id": "hub-to-eei-guide", "from": "hub", "to": "eei-guide", "label": "course card" },
+    { "id": "hub-to-eei-lab", "from": "hub", "to": "eei-lab", "label": "course card" },
+    { "id": "hub-to-math1-guide", "from": "hub", "to": "math1-guide", "label": "course card" },
+    { "id": "hub-to-math1-lab", "from": "hub", "to": "math1-lab", "label": "course card" },
+
+    { "id": "eei-guide-to-lab", "from": "eei-guide", "to": "eei-lab", "label": "open lab" },
+    { "id": "eei-lab-to-guide", "from": "eei-lab", "to": "eei-guide" },
+    { "id": "math1-guide-to-lab", "from": "math1-guide", "to": "math1-lab", "label": "open lab" },
+    { "id": "math1-lab-to-guide", "from": "math1-lab", "to": "math1-guide" },
+
+    { "id": "eei-guide-to-checklist", "from": "eei-guide", "to": "checklist-store", "label": "read / write ee1-checks" },
+    { "id": "math1-guide-to-checklist", "from": "math1-guide", "to": "checklist-store", "label": "read / write math1-checks" },
+
+    { "id": "hub-to-fonts", "from": "hub", "to": "google-fonts" },
+    { "id": "eei-guide-to-fonts", "from": "eei-guide", "to": "google-fonts" },
+    { "id": "eei-lab-to-fonts", "from": "eei-lab", "to": "google-fonts" },
+    { "id": "math1-guide-to-fonts", "from": "math1-guide", "to": "google-fonts" },
+    { "id": "math1-lab-to-fonts", "from": "math1-lab", "to": "google-fonts" },
+
+    { "id": "eei-guide-to-katex", "from": "eei-guide", "to": "katex-cdn", "label": "KaTeX CSS" },
+    { "id": "math1-guide-to-katex", "from": "math1-guide", "to": "katex-cdn", "label": "KaTeX CSS" },
+
+    { "id": "repository-to-pages", "from": "repository", "to": "pages-host", "label": "main / root deploy" },
+    { "id": "repository-to-ci", "from": "repository", "to": "ci", "label": "push / PR build check" }
   ],
   "cards": [
     {
       "dot": "cyan",
-      "title": "Content workflow",
+      "title": "Course pages and navigation",
       "items": [
-        "Study-guide LaTeX sources stay outside this repository and are converted to HTML with Pandoc. (README.md:44–45)",
-        "Lab interactions and styles live in the repository’s js/ and css/ folders. (README.md:45–46)"
+        "The hub links to four separate pages: an EEI guide, an EEI lab, a Math I guide, and a Math I lab. (index.html:68–105)",
+        "Each guide links to its matching lab; each lab links back to its guide. All four pages also return to the hub. (ee1-electrostatics-guide.html:61–66; ee1-electrostatics-lab.html:61–64; math1-guide.html:61–66; math1-lab.html:61–62)"
       ]
     },
     {
       "dot": "emerald",
-      "title": "Two separate release paths",
+      "title": "Browser state and page assets",
       "items": [
-        "GitHub Pages publishes main from the repository root. (README.md:63, 69)",
-        "The Jekyll Docker workflow checks pushes and pull requests; it does not publish the site. (README.md:67; .github/workflows/jekyll-docker.yml:3–19)"
+        "The EEI and Math I guide checklists use separate keys, ee1-checks and math1-checks. They restore checked items at load and save changes to this browser's localStorage. Storage errors are swallowed, so ticks may not persist when browser storage is unavailable. (js/ee1-electrostatics-guide.js:2–14; js/math1-guide.js:2–14)",
+        "Every page loads Roboto fonts from Google Fonts. Only the guides load the KaTeX stylesheet; their formulas are already rendered into HTML. (index.html:11–17; ee1-electrostatics-guide.html:11–21; README.md:44–45)",
+        "The guides and labs load local CSS and JavaScript. There is no build step for the pages; lab interactions run in the browser. (README.md:40–46; js/ee1-electrostatics-lab.js:205–239; js/math1-lab.js:3306–3336)"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "Deployment and CI",
+      "items": [
+        "GitHub Pages publishes the repository root from main. Every main commit starts GitHub's pages-build-deployment job. (README.md:63–66, 69)",
+        "The separate Jekyll Docker workflow checks pushes and pull requests targeting main; it builds but does not publish the site. (README.md:67; .github/workflows/jekyll-docker.yml:1–19)"
       ]
     }
   ]

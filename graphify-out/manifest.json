@@ -70,5 +70,95 @@
     "seen": 1792799239.2423759,
     "ast_hash": "ca4014e7f51a95fc55f149f16540cb24",
     "semantic_hash": "ca4014e7f51a95fc55f149f16540cb24"
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.delivery.json": {
+    "mtime": 1792867757.735975,
+    "seen": 1792872407.875137,
+    "ast_hash": "67f899a067cef1c925d4315248e4c9b6",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/candidate.json": {
+    "mtime": 1792862826.1936789,
+    "seen": 1792872407.8751402,
+    "ast_hash": "9fedf1c1ccda7096ce8e39eb43681939",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/review-4/autonomy-technologies.browser-check.json": {
+    "mtime": 1792862826.9906824,
+    "seen": 1792872407.8751419,
+    "ast_hash": "2b245506fd9cfba9320218a23a066af7",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/review-4/autonomy-technologies.finalize-summary.json": {
+    "mtime": 1792862827.0120091,
+    "seen": 1792872407.8751428,
+    "ast_hash": "ae6c2f66bf34c84fc6e4a0dad870b4e9",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/review-4/autonomy-technologies.finalize.json": {
+    "mtime": 1792862826.998713,
+    "seen": 1792872407.875144,
+    "ast_hash": "205721ab04b0517d8e964dc2acaf2f84",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/review-line-clamp/autonomy-technologies.browser-check.json": {
+    "mtime": 1792867763.6588984,
+    "seen": 1792872407.875145,
+    "ast_hash": "cb8aa57e366c0048313bd7428294f190",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/review-line-clamp/autonomy-technologies.finalize-summary.json": {
+    "mtime": 1792867763.7416344,
+    "seen": 1792872407.875146,
+    "ast_hash": "41b71eee3e9eff1118064554a504376b",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/review-line-clamp/autonomy-technologies.finalize.json": {
+    "mtime": 1792867763.7238708,
+    "seen": 1792872407.875146,
+    "ast_hash": "ded07e6a618d5e20a2e0af50cdad36e4",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1792798536.3247085,
+    "seen": 1792872407.875147,
+    "ast_hash": "861d739e89ffbf840768df26e75b610b",
+    "semantic_hash": ""
+  },
+  ".codex/hooks.json": {
+    "mtime": 1792798536.2615194,
+    "seen": 1792872407.875148,
+    "ast_hash": "1f5eb06d715397e6594b256c05469c6d",
+    "semantic_hash": ""
+  },
+  ".archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html": {
+    "mtime": 1792867757.644459,
+    "seen": 1792872407.875158,
+    "ast_hash": "6ebf638519e41e9f474466180a0590c0",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1792868331.1536787,
+    "seen": 1792872407.875159,
+    "ast_hash": "1fd840c3868657581070dd0b1de8365e",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1792798536.3242042,
+    "seen": 1792872407.875159,
+    "ast_hash": "67d88e9d0760c3ba54c75dfd9551c1c5",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20261024_200642_26a2d038_how_are_the_static_study_pages_hosted__and_what_gi.md": {
+    "mtime": 1792872402.979175,
+    "seen": 1792872407.8751638,
+    "ast_hash": "3821b43feccaf3e17b3636338fa9e829",
+    "semantic_hash": ""
+  },
+  "graphify-out/memory/query_20261024_200642_8a7177bd_does_the_graph_cover_the_learner_journey_from_the.md": {
+    "mtime": 1792872402.853017,
+    "seen": 1792872407.8751638,
+    "ast_hash": "30673a2a151c98db9c0ff8ec86159c40",
+    "semantic_hash": ""
   }
 }

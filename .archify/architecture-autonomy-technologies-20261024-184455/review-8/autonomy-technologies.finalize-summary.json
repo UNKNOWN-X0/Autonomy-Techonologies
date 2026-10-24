@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/candidate.json",
+    "sha256": "fb6aa4859a360d22fbea1e687cbcf1240a051589818e9552db838179117a408a",
+    "bytes": 8782
+  },
+  "artifact": {
+    "path": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html",
+    "sha256": "008afdab201420ccaf343c4e5a41019346a8f8a8abdf0bd9c32dc38a5d77d4be",
+    "bytes": 847502
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/review-8/autonomy-technologies.finalize.json",
+    "summaryReceipt": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/review-8/autonomy-technologies.finalize-summary.json",
+    "browserCheckReceipt": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/review-8/autonomy-technologies.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-10-24T15:48:29.002Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 3459,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  },
+  "visualReviewRecommendation": {
+    "action": "inspect-route-readability",
+    "signals": {
+      "resolvedCrossovers": 8,
+      "routesOverSuggestedBends": 4
+    },
+    "reason": "Automated gates passed, but crossings or detours still need perceptual review before claiming visual quality.",
+    "affectedRoutes": {
+      "crossings": [
+        {
+          "left": {
+            "id": "hub-to-eei-lab",
+            "from": "hub",
+            "to": "eei-lab",
+            "label": "course card",
+            "collectionIndex": 3,
+            "artifactIndex": 4
+          },
+          "right": {
+            "id": "hub-to-math1-guide",
+            "from": "hub",
+            "to": "math1-guide",
+            "label": "course card",
+            "collectionIndex": 4,
+            "artifactIndex": 5
+          },
+          "point": [
+            776,
+            264
+          ],
+          "sharedNode": "hub"
+        },
+        {
+          "left": {
+            "id": "eei-guide-to-lab",
+            "from": "eei-guide",
+            "to": "eei-lab",
+            "label": "open lab",
+            "collectionIndex": 6,
+            "artifactIndex": 7
+          },
+          "right": {
+            "id": "hub-to-fonts",
+            "from": "hub",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 12,
+            "artifactIndex": 13
+          },
+          "point": [
+            888.5,
+            169.33333333333334
+          ]
+        },
+        {
+          "left": {
+            "id": "eei-lab-to-guide",
+            "from": "eei-lab",
+            "to": "eei-guide",
+            "label": "",
+            "collectionIndex": 7,
+            "artifactIndex": 8
+          },
+          "right": {
+            "id": "hub-to-fonts",
+            "from": "hub",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 12,
+            "artifactIndex": 13
+          },
+          "point": [
+            909.5,
+            169.33333333333334
+          ]
+        },
+        {
+          "left": {
+            "id": "eei-guide-to-checklist",
+            "from": "eei-guide",
+            "to": "checklist-store",
+            "label": "read / write ee1-checks",
+            "collectionIndex": 10,
+            "artifactIndex": 11
+          },
+          "right": {
+            "id": "math1-lab-to-fonts",
+            "from": "math1-lab",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 16,
+            "artifactIndex": 17
+          },
+          "point": [
+            1284,
+            501
+          ]
+        },
+        {
+          "left": {
+            "id": "hub-to-fonts",
+            "from": "hub",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 12,
+            "artifactIndex": 13
+          },
+          "right": {
+            "id": "eei-lab-to-fonts",
+            "from": "eei-lab",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 14,
+            "artifactIndex": 15
+          },
+          "point": [
+            989,
+            169.33333333333334
+          ],
+          "sharedNode": "google-fonts"
+        },
+        {
+          "left": {
+            "id": "hub-to-fonts",
+            "from": "hub",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 12,
+            "artifactIndex": 13
+          },
+          "right": {
+            "id": "eei-guide-to-katex",
+            "from": "eei-guide",
+            "to": "katex-cdn",
+            "label": "KaTeX CSS",
+            "collectionIndex": 17,
+            "artifactIndex": 18
+          },
+          "point": [
+            1056,
+            169.33333333333334
+          ]
+        },
+        {
+          "left": {
+            "id": "eei-lab-to-fonts",
+            "from": "eei-lab",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 14,
+            "artifactIndex": 15
+          },
+          "right": {
+            "id": "eei-guide-to-katex",
+            "from": "eei-guide",
+            "to": "katex-cdn",
+            "label": "KaTeX CSS",
+            "collectionIndex": 17,
+            "artifactIndex": 18
+          },
+          "point": [
+            1056,
+            146
+          ]
+        },
+        {
+          "left": {
+            "id": "math1-guide-to-fonts",
+            "from": "math1-guide",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 15,
+            "artifactIndex": 16
+          },
+          "right": {
+            "id": "eei-guide-to-katex",
+            "from": "eei-guide",
+            "to": "katex-cdn",
+            "label": "KaTeX CSS",
+            "collectionIndex": 17,
+            "artifactIndex": 18
+          },
+          "point": [
+            1077,
+            284
+          ]
+        }
+      ],
+      "detours": [
+        {
+          "relationship": {
+            "id": "eei-guide-to-checklist",
+            "from": "eei-guide",
+            "to": "checklist-store",
+            "label": "read / write ee1-checks",
+            "collectionIndex": 10,
+            "artifactIndex": 11
+          },
+          "bends": 3,
+          "stretch": 1.139
+        },
+        {
+          "relationship": {
+            "id": "hub-to-fonts",
+            "from": "hub",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 12,
+            "artifactIndex": 13
+          },
+          "bends": 3,
+          "stretch": 1.073
+        },
+        {
+          "relationship": {
+            "id": "math1-guide-to-fonts",
+            "from": "math1-guide",
+            "to": "google-fonts",
+            "label": "",
+            "collectionIndex": 15,
+            "artifactIndex": 16
+          },
+          "bends": 4,
+          "stretch": 1
+        },
+        {
+          "relationship": {
+            "id": "repository-to-ci",
+            "from": "repository",
+            "to": "ci",
+            "label": "push / PR build check",
+            "collectionIndex": 20,
+            "artifactIndex": 21
+          },
+          "bends": 3,
+          "stretch": 1.247
+        }
+      ],
+      "truncated": false
+    },
+    "hints": [
+      "hub has 4 relationships facing its right side, which fits 3 ports: make that side at least 74px, or move some of those neighbours so they face another side of hub.",
+      "hub → eei-lab and hub → math1-guide cross next to hub: move node eei-lab or math1-guide so the two reach hub from different sides (for example one level with it, one directly above or below it).",
+      "eei-guide → eei-lab crosses hub → google-fonts: move the node of whichever is a branch, return, or second entrance to the other side of the main path, so that relationship runs through an empty corridor.",
+      "eei-lab → eei-guide crosses hub → google-fonts: move the node of whichever is a branch, return, or second entrance to the other side of the main path, so that relationship runs through an empty corridor.",
+      "eei-guide → checklist-store crosses math1-lab → google-fonts: move the node of whichever is a branch, return, or second entrance to the other side of the main path, so that relationship runs through an empty corridor.",
+      "hub → google-fonts and eei-lab → google-fonts cross next to google-fonts: move node hub or eei-lab so the two reach google-fonts from different sides (for example one level with it, one directly above or below it).",
+      "hub → google-fonts crosses eei-guide → katex-cdn: move the node of whichever is a branch, return, or second entrance to the other side of the main path, so that relationship runs through an empty corridor.",
+      "eei-lab → google-fonts crosses eei-guide → katex-cdn: move the node of whichever is a branch, return, or second entrance to the other side of the main path, so that relationship runs through an empty corridor."
+    ],
+    "repair": "Trace these relationships at the desktop viewport. For Architecture, use references/architecture-layout-repair.md: reflow a blocked main path or tangled connected scene, and repair an isolated defect locally only when the surrounding composition is accepted. Preserve all semantic content and user-fixed geometry. Rerun finalize once after the edit."
+  }
+}

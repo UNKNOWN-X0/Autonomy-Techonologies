@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "receiptId": "a26275f8-0360-40f2-9d93-4c67bf7ff6b5",
+  "receiptId": "7a54b456-bc53-49de-bdbc-896f66c04ea2",
   "status": "current",
   "command": "deliver",
   "type": "architecture",
   "input": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/candidate.json",
   "output": "/Users/thanate/Developer/Education/AutonomyTechnologies/.archify/architecture-autonomy-technologies-20261024-184455/autonomy-technologies.html",
   "specification": {
-    "sha256": "1a271b1856d014a586ae1615feb599a00eff473af7129292f0ae0d26cf136b0a",
-    "bytes": 6221
+    "sha256": "fb6aa4859a360d22fbea1e687cbcf1240a051589818e9552db838179117a408a",
+    "bytes": 8782
   },
   "artifact": {
-    "sha256": "2d409870b4b8b27c44a82f0c8638b1e148489e4c5fa02394733894bd70d98ddf",
-    "bytes": 828428
+    "sha256": "008afdab201420ccaf343c4e5a41019346a8f8a8abdf0bd9c32dc38a5d77d4be",
+    "bytes": 847502
   }
 }

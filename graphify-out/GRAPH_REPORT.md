@@ -1,14 +1,19 @@
 # Graph Report - AutonomyTechnologies  (2026-10-24)
 
 ## Corpus Check
-- 12 files · ~189,660 words
+- 20 files · ~256,265 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 6 file(s) not represented in the graph (top: .css 5, (none) 1)
+- Unclassified: 7 file(s) not represented in the graph (top: .css 5, (none) 2)
 
 ## Summary
-- 244 nodes · 521 edges · 12 communities (8 shown, 4 thin omitted)
+- 259 nodes · 532 edges · 16 communities (10 shown, 6 thin omitted)
 - Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 32 edges (avg confidence: 0.85)
-- Token cost: unavailable (agent usage metadata was not exposed)
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `e4b3d1e4`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Mathematics Lab Code
@@ -21,6 +26,10 @@
 - Engineering Mathematics Guide
 - Math Utility Library
 - Site Preview Artwork
+- Q: How are the static study pages hosted, and what GitHub Pages and Jekyll workflow conditions control publishing?
+- Q: Does the graph cover the learner journey from the course home through the electrostatics and mathematics guides and labs, including local progress state and external assets?
+- Project instructions
+- CLAUDE.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `Electrostatic fields lab` - 38 edges
@@ -45,7 +54,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (12 total, 4 thin omitted)
+## Communities (16 total, 6 thin omitted)
 
 ### Community 0 - "Mathematics Lab Code"
 Cohesion: 0.13
@@ -79,17 +88,30 @@ Nodes (13): Electrical Engineering I study cards, Mathematics for Engineers I st
 Cohesion: 0.19
 Nodes (13): Absolute-value inequalities, Bernoulli inequality by mathematical induction, Complex arithmetic in the Gaussian plane, Complex powers and roots by de Moivre's theorem, Injective, surjective, and bijective functions, Least-squares curve fitting, Linear systems and Gauss elimination, Mathematics for Engineers I Lab page (+5 more)
 
+### Community 12 - "Q: How are the static study pages hosted, and what GitHub Pages and Jekyll workflow conditions control publishing?"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: How are the static study pages hosted, and what GitHub Pages and Jekyll workflow conditions control publishing?, Source Nodes
+
+### Community 13 - "Q: Does the graph cover the learner journey from the course home through the electrostatics and mathematics guides and labs, including local progress state and external assets?"
+Cohesion: 0.40
+Nodes (4): Answer, Outcome, Q: Does the graph cover the learner journey from the course home through the electrostatics and mathematics guides and labs, including local progress state and external assets?, Source Nodes
+
 ## Knowledge Gaps
-- **36 isolated node(s):** `Active-recall study workflow`, `LaTeX, Pandoc, and KaTeX publishing pipeline`, `Jekyll site CI`, `Practice problems and exam checklist`, `Logic and sets` (+31 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 60 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **36 isolated node(s):** `Absolute value`, `Complex arithmetic, conjugates, and modulus`, `Complex exponential, logarithm, sine, and cosine`, `Complex polar form and operations`, `Cross product in three dimensions` (+31 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 72 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Work-memory lessons
+
+**Preferred sources** — corroborated by past sessions; start here.
+- `GitHub Pages hosting` (2× useful, score=1.999999899)
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Fr` connect `Math Utility Library` to `Mathematics Lab Code`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **What connects `Active-recall study workflow`, `LaTeX, Pandoc, and KaTeX publishing pipeline`, `Jekyll site CI` to the rest of the system?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **What connects `Absolute value`, `Complex arithmetic, conjugates, and modulus`, `Complex exponential, logarithm, sine, and cosine` to the rest of the system?**
   _36 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Mathematics Lab Code` be split into smaller, more focused modules?**
   _Cohesion score 0.1328011611030479 - nodes in this community are weakly interconnected._
