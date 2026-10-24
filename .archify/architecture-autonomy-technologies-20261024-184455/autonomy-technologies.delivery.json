@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "receiptId": "e37f20b4-d09f-4c16-9e36-510a0ea3b30c",
+  "receiptId": "ac7977aa-ec96-47fa-b843-6bbd1ea21a04",
   "status": "current",
   "command": "deliver",
   "type": "architecture",
@@ -11,7 +11,7 @@
     "bytes": 6221
   },
   "artifact": {
-    "sha256": "c1479fc240845d97e708dd2ffcccbfbd6313f22a4c76bd4bb627948ed1668742",
-    "bytes": 828648
+    "sha256": "2d409870b4b8b27c44a82f0c8638b1e148489e4c5fa02394733894bd70d98ddf",
+    "bytes": 828428
   }
 }
